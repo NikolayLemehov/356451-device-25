@@ -5,8 +5,72 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <header class="header" id="header">
+    <a class="header__logo" href="#header">
+      <img class="header__logo-img" src="img/logo.svg" alt="лого девайс" width="163" height="35">
+    </a>
+    <div class="header__top">
+      <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
+        <input class="form-search__field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+        <label class="form-search__label" for="search-field" aria-label="Поиск"></label>
+      </form>
+      <div class="user-navigation">
+        <div class="user-navigation__container user-navigation__container_active">
+          <button class="user-navigation__btn">Войти</button>
+        </div>
+        <div class="user-navigation__container">
+          <a href="#" class="user-navigation__user_link">Валентин Петухов</a>
+          <button class="user-navigation__btn">Выйти</button>
+        </div>
+      </div>
+      <div class="comparison"><a href="#" class="comparison__link">Сравнить</a></div>
+      <div class="cart"><a href="#" class="cart__link">Корзина</a></div>
+    </div>
+    <div class="header__bottom">
+      <nav class="main-menu">
+        <ul class="list main-menu__list1">
+          <li class="main-menu__item1">
+            <a class="main-menu__link" href="#">Каталог товаров</a>
+            <ul class="list main-menu__list2">
+              <li class="main-menu__item2"><span class="visually-hidden">Список 1</span>
+                <ul class="main-menu__list3">
+                  <li class="main-menu__item3">
+                    <a class="main-menu__link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="main-menu__item3">
+                    <a class="main-menu__link" href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="main-menu__item3">
+                    <a class="main-menu__link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item2"><span class="visually-hidden">Список 2</span>
+                <ul class="main-menu__list3">
+                  <li class="main-menu__item3">
+                    <a class="main-menu__link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="main-menu__item3">
+                    <a class="main-menu__link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item2"><span class="visually-hidden">Список 3</span>
+                <ul class="main-menu__list3">
+                  <li class="main-menu__item3">
+                    <a class="main-menu__link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu__item1"><a href="#">Доставка</a></li>
+          <li class="main-menu__item1"><a href="#">Гарантия</a></li>
+          <li class="main-menu__item1"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   </body>
 </html>
