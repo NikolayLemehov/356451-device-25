@@ -390,6 +390,37 @@
       </div>
     </div>
   </footer>
+  <section class="modal write-us">
+    <h2 class="visually-hidden">написать нам</h2>
+    <button class="btn-modal-close write-us__modal-close" aria-label="закрывает окно написать нам"></button>
+    <form class="write-us__form" method="post" action="https://echo.htmlacademy.ru">
+      <div class="write-us__top">
+        <p class="write-us__p">
+          <label class="write-us__label" for="name-field">Ваше имя:</label>
+          <input class="write-us__field" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us__p">
+          <label class="write-us__label" for="email-field">Ваш e-mail:</label>
+          <input class="write-us__field" type="text" name="email" id="email-field" placeholder="email@example.com">
+        </p>
+        <p class="write-us__p">
+          <label class="write-us__label" for="text-email-field">Текст письма:</label>
+          <textarea class="write-us__field write-us__field_area"
+                    name="text" id="text-email-field" cols="30" rows="10"
+                    placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <div class="write-us__bottom">
+        <button class="btn btn-default btn-default-write-us" type="submit">отправить</button>
+      </div>
+    </form>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe class="modal-map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1557234906689!5m2!1sru!2sua"
+            width="960" height="559" allowfullscreen></iframe>
+    <button class="btn-modal-close" aria-label="закрывает окно-карту как добраться"></button>
+  </section>
 
   </body>
 </html>
