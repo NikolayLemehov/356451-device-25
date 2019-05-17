@@ -5,10 +5,12 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic">
   </head>
   <body>
   <header class="header" id="header">
-    <a class="header__logo" href="#header">Лого Девайс
+    <div class="container">
+      <a class="header__logo" href="#header" aria-label="Лого Девайс">
       <svg class="header__svg_logo" viewBox="0 0 163 35" width="163" height="35" xmlns="http://www.w3.org/2000/svg">
         <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458
           16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0
@@ -25,66 +27,69 @@
           8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z"></path>
       </svg>
     </a>
-    <div class="header__top">
-      <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
-        <input class="form-search__field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-        <label class="form-search__label" for="search-field" aria-label="Поиск"></label>
-      </form>
-      <div class="user-navigation">
-        <div class="user-navigation__container user-navigation__container_active">
-          <button class="user-navigation__btn">Войти</button>
+      <div class="header__top">
+        <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
+          <input class="form-search__field" type="search" name="search" id="search-field"
+                 placeholder="Поиск по сайту" required>
+          <label class="form-search__label" for="search-field" aria-label="Поиск по сайту"></label>
+          <button class="form-search__btn" type="submit">Найти</button>
+        </form>
+        <div class="user-navigation">
+          <div class="user-navigation__container user-navigation__container_active">
+            <a class="user-navigation__btn user-navigation__btn_enter" href="#">Войти</a>
+          </div>
+          <div class="user-navigation__container">
+            <a class="user-navigation__user_link" href="#">Валентин Петухов</a>
+            <a class="user-navigation__btn user-navigation__btn_exit" href="#">Выйти</a>
+          </div>
         </div>
-        <div class="user-navigation__container">
-          <a href="#" class="user-navigation__user_link">Валентин Петухов</a>
-          <button class="user-navigation__btn">Выйти</button>
-        </div>
+        <div class="comparison"><a class="comparison__link" href="#">Сравнить</a></div>
+        <div class="cart"><a class="cart__link" href="#">Корзина</a></div>
       </div>
-      <div class="comparison"><a href="#" class="comparison__link">Сравнить</a></div>
-      <div class="cart"><a href="#" class="cart__link">Корзина</a></div>
-    </div>
-    <div class="header__bottom">
-      <nav class="main-menu">
-        <ul class="list main-menu__list1">
-          <li class="main-menu__item1">
-            <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
-            <ul class="list main-menu__list2">
-              <li class="main-menu__item2"><span class="visually-hidden">Список 1</span>
-                <ul class="main-menu__list3">
-                  <li class="main-menu__item3">
-                    <a class="main-menu__link" href="catalog.html">Виртуальная реальность</a>
-                  </li>
-                  <li class="main-menu__item3">
-                    <a class="main-menu__link" href="catalog.html">Моноподы для селфи</a>
-                  </li>
-                  <li class="main-menu__item3">
-                    <a class="main-menu__link" href="catalog.html">Экшн-камеры</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="main-menu__item2"><span class="visually-hidden">Список 2</span>
-                <ul class="main-menu__list3">
-                  <li class="main-menu__item3">
-                    <a class="main-menu__link" href="catalog.html">Фитнес-браслеты</a>
-                  </li>
-                  <li class="main-menu__item3">
-                    <a class="main-menu__link" href="catalog.html">Умные часы</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="main-menu__item2"><span class="visually-hidden">Список 3</span>
-                <ul class="main-menu__list3">
-                  <li class="main-menu__item3">
-                    <a class="main-menu__link" href="catalog.html">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="main-menu__item1"><a href="#">Доставка</a></li>
-          <li class="main-menu__item1"><a href="#">Гарантия</a></li>
-          <li class="main-menu__item1"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header__bottom">
+        <nav class="main-menu">
+          <ul class="list main-menu__list1">
+            <li class="main-menu__item1">
+              <a class="main-menu__link1" href="catalog.html">Каталог товаров</a>
+              <ul class="list main-menu__list2">
+                <li class="main-menu__item2"><span class="visually-hidden">Список 1</span>
+                  <ul class="list main-menu__list3">
+                    <li class="main-menu__item3">
+                      <a class="main-menu__link3" href="catalog.html">Виртуальная реальность</a>
+                    </li>
+                    <li class="main-menu__item3">
+                      <a class="main-menu__link3" href="catalog.html">Моноподы для селфи</a>
+                    </li>
+                    <li class="main-menu__item3">
+                      <a class="main-menu__link3" href="catalog.html">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-menu__item2"><span class="visually-hidden">Список 2</span>
+                  <ul class="list main-menu__list3">
+                    <li class="main-menu__item3">
+                      <a class="main-menu__link3" href="catalog.html">Фитнес-браслеты</a>
+                    </li>
+                    <li class="main-menu__item3">
+                      <a class="main-menu__link3" href="catalog.html">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-menu__item2"><span class="visually-hidden">Список 3</span>
+                  <ul class="list main-menu__list3">
+                    <li class="main-menu__item3">
+                      <a class="main-menu__link3" href="catalog.html">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item1"><a class="main-menu__link1" href="#">Доставка</a></li>
+            <li class="main-menu__item1"><a class="main-menu__link1" href="#">Гарантия</a></li>
+            <li class="main-menu__item1"><a class="main-menu__link1" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -92,8 +97,6 @@
     <section class="promo-slider">
       <h2 class="visually-hidden">Слайдер товаров</h2>
       <div class="container">
-        <button class="promo-slider__prev">Следующий слайд</button>
-        <button class="promo-slider__next">Предыдущий слайд</button>
         <ul class="list promo-slider__carousel">
           <li class="promo-slider__item visible">
             <span class="promo-slider__count">01</span>
