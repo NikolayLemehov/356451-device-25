@@ -232,19 +232,14 @@
   <section class="service">
     <div class="container">
       <h2 class="visually-hidden">Сервисы</h2>
-      <ul class="list service__list1">
-        <li class="service__item1">
-          <button class="service__btn">Доставка</button>
-        </li>
-        <li class="service__item1">
-          <button class="service__btn">Гарантия</button>
-        </li>
-        <li class="service__item1">
-          <button class="service__btn">Кредит</button>
-        </li>
-      </ul>
-      <ul class="list service__list2">
-        <li class="service__item2">
+      <input class="service__btn visually-hidden" type="radio" name="service__btn" id="service-btn-1" checked>
+      <label class="service__label" for="service-btn-1">Доставка</label>
+      <input class="service__btn visually-hidden" type="radio" name="service__btn" id="service-btn-2">
+      <label class="service__label" for="service-btn-2">Гарантия</label>
+      <input class="service__btn visually-hidden" type="radio" name="service__btn" id="service-btn-3">
+      <label class="service__label" for="service-btn-3">Кредит</label>
+      <ul class="list service__list">
+        <li class="service__item">
           <h3 class="service__title">Доставка</h3>
           <p class="service__content">
             Мы с удовольствием доставим ваш товар прямо
@@ -252,7 +247,7 @@
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </li>
-        <li class="service__item2">
+        <li class="service__item">
           <h3 class="service__title">Гарантия</h3>
           <p class="service__content">
             Если из-за возгорания купленного у нас товара у вас
@@ -260,7 +255,7 @@
             Товар, не дом, конечно же.
           </p>
         </li>
-        <li class="service__item2">
+        <li class="service__item">
           <h3 class="service__title">Кредит</h3>
           <p class="service__content">
             Залезть в долговую яму стало проще! Кредитные
