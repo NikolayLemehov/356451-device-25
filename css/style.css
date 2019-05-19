@@ -296,6 +296,77 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+/*main popular*/
+.popular__item {
+  width: 160px; /*временно*/
+}
+
+.popular__frame {
+  width: 160px; /*временно*/
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular__link:hover .popular__frame,
+.popular__link:active .popular__frame {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.popular__img {
+  width: 160px;
+  height: 160px;
+
+  background-repeat: no-repeat;
+}
+
+.popular__link:active .popular__img {
+  background-color: rgba(240, 197, 46, 1);
+  opacity: 0.3;
+}
+
+.popular__item:nth-child(1) .popular__img {
+  background-image: url("../img/popular-1.svg");
+  background-position: 50% 50%;
+}
+
+.popular__item:nth-child(2) .popular__img {
+  background-image: url("../img/popular-2.svg");
+  background-position: 50% 100%;
+}
+
+.popular__item:nth-child(3) .popular__img {
+  background-image: url("../img/popular-3.svg");
+  background-position: 50% 50%;
+}
+
+.popular__item:nth-child(4) .popular__img {
+  background-image: url("../img/popular-4.svg");
+  background-position: 50% 50%;
+}
+
+.popular__item:nth-child(5) .popular__img {
+  background-image: url("../img/popular-5.svg");
+  background-position: 50% 50%;
+}
+
+.popular__item:nth-child(6) .popular__img {
+  background-image: url("../img/popular-6.svg");
+  background-position: 50% 50%;
+}
+
+.popular__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.popular__item:active .popular__title {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*footer*/
 .footer {
   background-color: rgba(70, 70, 70, 1);
