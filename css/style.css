@@ -94,11 +94,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*header*/
-.header__svg_logo:hover {
+.header__link_logo:hover .header__svg_logo {
   opacity: 0.6;
 }
 
-.header__svg_logo:active {
+.header__link_logo:active .header__svg_logo {
   opacity: 0.3;
 }
 
@@ -186,12 +186,12 @@ input[type="radio"].visually-hidden {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
-/*header header-top user-navigation*/
-.user-navigation__btn,
-.user-navigation__btn_exit:hover:active,
-.user-navigation__user_link,
-.comparison__link,
-.cart__link {
+/*header header-top user-nav*/
+.header .user-nav__btn,
+.header .user-nav__btn_exit:hover:active,
+.header .user-nav__user_link,
+.header .comparison__link,
+.header .cart__link {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -201,22 +201,18 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.user-navigation__btn {
-  border: none;
-}
-
-.user-navigation__btn:hover,
-.user-navigation__user_link:hover,
-.comparison__link:hover,
-.cart__link:hover {
+.header .user-nav__btn:hover,
+.header .user-nav__user_link:hover,
+.header .comparison__link:hover,
+.header .cart__link:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation__btn_enter:active,
-.user-navigation__btn_exit,
-.user-navigation__user_link:active,
-.comparison__link:active,
-.cart__link:active {
+.header .user-nav__btn_enter:active,
+.header .user-nav__btn_exit,
+.header .user-nav__user_link:active,
+.header .comparison__link:active,
+.header .cart__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -237,17 +233,125 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
-/*h3 {*/
-  /*font-family: "Gilroy", Arial, sans-serif;*/
-  /*font-size: 47px;*/
-  /*font-weight: 800;*/
-  /*line-height: 56px;*/
-  /*letter-spacing: 0.21px;*/
-  /*color: rgba(0, 0, 0, 1);*/
+.main-menu__link1:hover,
+.main-menu__link3:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
 
-  /*background-color: rgba(255, 255, 255, 1);*/
-/*}*/
+.main-menu__link1:active,
+.main-menu__link3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*footer*/
+.footer {
+  background-color: rgba(70, 70, 70, 1);
+}
+
+/*footer footer__top*/
+.footer__link_logo .footer__svg_logo {
+  fill: rgba(255, 198, 0, 1);
+}
+
+.footer__link_logo:hover .footer__svg_logo {
+  fill: rgba(255, 198, 0, 0.6);
+}
+
+.footer__link_logo:active .footer__svg_logo {
+  fill: rgba(255, 198, 0, 0.3);
+}
+
+/*footer footer__top user-nav*/
+.footer .user-nav__btn,
+.footer .user-nav__btn_exit:hover:active,
+.footer .user-nav__user_link,
+.footer .comparison__link,
+.footer .cart__link {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.7);
+
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer .user-nav__btn:hover,
+.footer .user-nav__user_link:hover,
+.footer .comparison__link:hover,
+.footer .cart__link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer .user-nav__btn_enter:active,
+.footer .user-nav__btn_exit,
+.footer .user-nav__user_link:active,
+.footer .comparison__link:active,
+.footer .cart__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*footer footer-middle*/
+.footer__address,
+.footer__phone {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer__menu_link {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer__menu_link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__menu_link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*footer footer__bottom*/
+.social-list__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  font-size: 0;
+
+  background: 50% 50% no-repeat;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.social-list__link:hover {
+  opacity: 0.6;
+}
+
+.social-list__link:active {
+  opacity: 0.1;
+}
+
+.social-list__link[data-social="fb"] {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.social-list__link[data-social="instagram"] {
+  background-image: url("../img/icon-instagram.svg");
+}
+
+.social-list__link[data-social="twitter"] {
+  background-image: url("../img/icon-twitter.svg");
+}
 
