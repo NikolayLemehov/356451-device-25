@@ -97,6 +97,12 @@
   <section class="promo-slider">
     <h2 class="visually-hidden">Слайдер товаров</h2>
     <div class="container">
+      <label class="visually-hidden" for="slide1">Слайд 01</label>
+      <input type="radio" class="promo-slider__dot-btn promo-slider__dot-btn_active" name="slide-btn" id="slide1" checked>
+      <label class="visually-hidden" for="slide2">Слайд 02</label>
+      <input type="radio" class="promo-slider__dot-btn" name="slide-btn" id="slide2">
+      <label class="visually-hidden" for="slide3">Слайд 03</label>
+      <input type="radio" class="promo-slider__dot-btn" name="slide-btn" id="slide3">
       <ul class="list promo-slider__carousel">
         <li class="promo-slider__item visible">
           <span class="promo-slider__count">01</span>
@@ -163,17 +169,6 @@
               </tr>
             </table>
           </div>
-        </li>
-      </ul>
-      <ul class="list promo-slider__dot-list">
-        <li class="promo-slider__dot-item">
-          <button class="promo-slider__dot-btn promo-slider__dot-btn_active">Слайд 01</button>
-        </li>
-        <li class="promo-slider__dot-item">
-          <button class="promo-slider__dot-btn">Слайд 02</button>
-        </li>
-        <li class="promo-slider__dot-item">
-          <button class="promo-slider__dot-btn">Слайд 03</button>
         </li>
       </ul>
     </div>

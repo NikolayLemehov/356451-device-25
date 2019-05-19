@@ -45,7 +45,7 @@ body {
   padding: 0;
 
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -244,6 +244,56 @@ input[type="radio"].visually-hidden {
 .main-menu__link1:active,
 .main-menu__link3:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+/*main*/
+/*main promo-slider*/
+.promo-slider__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+}
+
+.promo-slider__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.promo-slider__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.specification-table__td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.specification-table__th {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: rgba(70, 70, 70, 1);
+}
+
+.promo-slider__item {
+  display: none;
+}
+
+.promo-slider__dot-btn:nth-of-type(1):checked ~ .promo-slider__carousel .promo-slider__item:nth-child(1),
+.promo-slider__dot-btn:nth-of-type(2):checked ~ .promo-slider__carousel .promo-slider__item:nth-child(2),
+.promo-slider__dot-btn:nth-of-type(3):checked ~ .promo-slider__carousel .promo-slider__item:nth-child(3) {
+  display: block;
 }
 
 /*footer*/
