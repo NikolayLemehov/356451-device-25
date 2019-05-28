@@ -413,10 +413,6 @@ input[type="radio"].visually-hidden {
   min-width: 160px;
 }
 
-.service__label:hover {
-  background-color: rgba(240, 197, 46, 1);
-}
-
 .service__btn:checked + .service__label,
 .service__label:active {
   color: rgba(247, 225, 132, 1);
@@ -489,14 +485,17 @@ input[type="radio"].visually-hidden {
 
 .brands__img {
   opacity: 0;
+  transition: all, 0.3s;
 }
 
 .brands__link:hover::before {
   opacity: 0;
+  transition: all, 0.3s;
 }
 
 .brands__link:hover .brands__img {
   opacity: 1;
+  transition: all, 0.3s;
 }
 
 /*main about-us*/
