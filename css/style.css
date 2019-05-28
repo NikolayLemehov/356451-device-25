@@ -410,13 +410,7 @@ input[type="radio"].visually-hidden {
 
 /*main service*/
 .service__label {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2.15px;
-  color: rgba(0, 0, 0, 1);
+  min-width: 160px;
 }
 
 .service__label:hover {
