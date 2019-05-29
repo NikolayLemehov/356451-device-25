@@ -107,10 +107,12 @@
       <input class="promo-slider__dot-btn" id="slide3" name="slide-btn" type="radio">
       <ul class="list promo-slider__carousel">
         <li class="promo-slider__item visible">
-          <span class="promo-slider__count">01</span>
-          <img alt="Палка для селфи" class="promo-slider__img" height="486" src="img/slider-1.png" width="384">
+          <div class="promo-slider__wrap_img">
+            <img alt="Палка для селфи" class="promo-slider__img" height="486" src="img/slider-1.png" width="384">
+          </div>
           <div class="promo-slider__wrap_description">
-            <h3 class="promo-slider__title">Делай селфи, как Бен Стиллер!</h3>
+            <span class="promo-slider__count">01</span>
+            <h3 class="promo-slider__title">Делай селфи,<br> как Бен Стиллер!</h3>
             <p class="promo-slider__feature">
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -131,9 +133,11 @@
           </div>
         </li>
         <li class="promo-slider__item">
-          <span class="promo-slider__count">02</span>
-          <img alt="Фитнес-браслет" class="promo-slider__img" height="485" src="img/slider-2.png" width="345">
+          <div class="promo-slider__wrap_img">
+            <img alt="Фитнес-браслет" class="promo-slider__img" height="485" src="img/slider-2.png" width="345">
+          </div>
           <div class="promo-slider__wrap_description">
+            <span class="promo-slider__count">02</span>
             <h3 class="promo-slider__title">Худеем правильно!</h3>
             <p class="promo-slider__feature">
               Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -151,9 +155,11 @@
           </div>
         </li>
         <li class="promo-slider__item">
-          <span class="promo-slider__count">03</span>
-          <img alt="Квадрокоптер" class="promo-slider__img" height="334" src="img/slider-3.png" width="526">
+          <div class="promo-slider__wrap_img">
+            <img alt="Квадрокоптер" class="promo-slider__img" height="334" src="img/slider-3.png" width="526">
+          </div>
           <div class="promo-slider__wrap_description">
+            <span class="promo-slider__count">03</span>
             <h3 class="promo-slider__title">Порхает как бабочка, жалит как пчела!</h3>
             <p class="promo-slider__feature">
               Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -192,7 +198,7 @@
             <div class="popular__frame">
               <div class="popular__img"></div>
             </div>
-            <span class="popular__title">Моноподы для селфи</span>
+            <span class="popular__title">Моноподы <span class="nowrap">для селфи</span></span>
           </a>
         </li>
         <li class="popular__item">
@@ -252,7 +258,7 @@
           <h3 class="service__title">Гарантия</h3>
           <p class="service__content">
             Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
+            сгорит дом — не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.
           </p>
         </li>
@@ -433,7 +439,6 @@
           width="960"></iframe>
   <button aria-label="закрывает окно-карту как добраться" class="btn-modal-close"></button>
 </section>
-
 <script src="js/script.js"></script>
 </body>
 </html>
