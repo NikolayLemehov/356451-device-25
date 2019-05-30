@@ -98,7 +98,8 @@
   <section class="promo-slider">
     <h2 class="visually-hidden">Слайдер товаров</h2>
     <div class="container">
-      <input checked class="promo-slider__dot-btn visually-hidden promo-slider__dot-btn_active" id="slide1" name="slide-btn"
+      <input checked class="promo-slider__dot-btn visually-hidden promo-slider__dot-btn_active" id="slide1"
+             name="slide-btn"
              type="radio">
       <input class="promo-slider__dot-btn visually-hidden" id="slide2" name="slide-btn" type="radio">
       <input class="promo-slider__dot-btn visually-hidden" id="slide3" name="slide-btn" type="radio">
@@ -177,9 +178,9 @@
         </li>
       </ul>
       <div class="promo-slider__control">
-        <label class="promo-slider__label" for="slide1" aria-label="Слайдер 01">Слайд 01</label>
-        <label class="promo-slider__label" for="slide2" aria-label="Слайдер 02">Слайд 02</label>
-        <label class="promo-slider__label" for="slide3" aria-label="Слайдер 03">Слайд 03</label>
+        <label aria-label="Слайдер 01" class="promo-slider__label" for="slide1">Слайд 01</label>
+        <label aria-label="Слайдер 02" class="promo-slider__label" for="slide2">Слайд 02</label>
+        <label aria-label="Слайдер 03" class="promo-slider__label" for="slide3">Слайд 03</label>
       </div>
     </div>
   </section>
@@ -241,11 +242,11 @@
   <section class="service">
     <div class="container">
       <h2 class="visually-hidden">Сервисы</h2>
-      <input class="service__btn visually-hidden" type="radio" name="service__btn" id="service-btn-1" checked>
+      <input checked class="service__btn visually-hidden" id="service-btn-1" name="service__btn" type="radio">
       <label class="btn service__label" for="service-btn-1">Доставка</label>
-      <input class="service__btn visually-hidden" type="radio" name="service__btn" id="service-btn-2">
+      <input class="service__btn visually-hidden" id="service-btn-2" name="service__btn" type="radio">
       <label class="btn service__label" for="service-btn-2">Гарантия</label>
-      <input class="service__btn visually-hidden" type="radio" name="service__btn" id="service-btn-3">
+      <input class="service__btn visually-hidden" id="service-btn-3" name="service__btn" type="radio">
       <label class="btn service__label" for="service-btn-3">Кредит</label>
       <ul class="list service__list">
         <li class="service__item">
@@ -361,8 +362,10 @@
           <a class="user-nav__btn user-nav__btn_exit" href="#">Выйти</a>
         </div>
       </div>
-      <div class="comparison"><a class="comparison__link" href="#">Сравнить</a></div>
-      <div class="cart"><a class="cart__link" href="#">Корзина</a></div>
+      <div class="footer__widgets">
+        <div class="comparison"><a class="comparison__link" href="#">Сравнить</a></div>
+        <div class="cart"><a class="cart__link" href="#">Корзина</a></div>
+      </div>
     </div>
     <div class="footer__middle">
       <address class="footer__address">г. Москва, ул. Строителей, 15</address>
@@ -380,6 +383,7 @@
       <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
     <div class="footer__bottom">
+      <div class="footer__dash"></div>
       <ul class="list social-list">
         <li class="social-list__item">
           <a aria-label="facebook" class="social-list__link"
@@ -400,9 +404,10 @@
           </a>
         </li>
       </ul>
-      <a class="footer-developed-by__link"
+      <a aria-label="htmlacademy.ru" class="footer-developed-by__link"
          href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         htmlacademy.ru
+        <img alt="Лого html academy" class="footer-developed-by__img" height="34" src="img/logo-html.svg" width="27">
       </a>
     </div>
   </div>

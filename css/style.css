@@ -285,9 +285,11 @@ input[type="radio"].visually-hidden {
 /*header header__top user-nav*/
 .user-nav {
   position: relative;
-
-  width: 287px;
   padding-left: 35px;
+}
+
+.header .user-nav {
+  width: 287px;
   padding-top: 10px;
 }
 
@@ -300,8 +302,8 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.user-nav__btn_enter::before,
-.user-nav__user_link::before {
+.header .user-nav__btn_enter::before,
+.header .user-nav__user_link::before {
   content: '';
   position: absolute;
   top: 19px;
@@ -357,7 +359,7 @@ input[type="radio"].visually-hidden {
   padding-left: 22px;
 }
 
-.comparison__link::before {
+.header .comparison__link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -369,7 +371,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/icon-compare.svg") no-repeat 0 0;
 }
 
-.cart__link::before {
+.header .cart__link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -608,23 +610,25 @@ input[type="radio"].visually-hidden {
 }
 
 .specification-table__td {
+  padding-right: 10px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
   letter-spacing: 0.36px;
   text-indent: -2.2px;
+  white-space: nowrap;
 }
 
 .specification-table__th {
   padding-right: 10px;
   padding-top: 6px;
-
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.13px;
   text-indent: -1px;
+  white-space: nowrap;
   color: rgba(70, 70, 70, 1);
 }
 
@@ -1088,11 +1092,25 @@ input[type="radio"].visually-hidden {
 
 /*footer*/
 .footer {
+  padding-top: 63px;
+  padding-bottom: 66px;
   background-color: rgba(70, 70, 70, 1);
 }
 
 /*footer footer__top*/
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-bottom: 29px;
+}
+
+.footer__link_logo {
+  margin-top: 3px;
+}
+
 .footer__link_logo .footer__svg_logo {
+  display: block;
   fill: rgba(255, 198, 0, 1);
 }
 
@@ -1105,6 +1123,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*footer footer__top user-nav*/
+.footer .user-nav {
+  margin-left: auto;
+  margin-right: 32px;
+}
+
 .footer .user-nav__btn,
 .footer .user-nav__btn_exit:hover:active,
 .footer .user-nav__user_link,
@@ -1134,7 +1157,56 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/*footer footer-middle*/
+.footer .user-nav__btn_enter::before,
+.footer .user-nav__user_link::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 13px;
+  height: 12px;
+  background: url("../img/icon-user-footer.svg"), no-repeat, 0 0;
+}
+
+.comparison__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+
+  background: url("../img/icon-compare-footer.svg") no-repeat 0 0;
+}
+
+.footer__widgets {
+  display: flex;
+  justify-content: space-between;
+  width: 223px;
+  /*padding-top: 10px;*/
+}
+
+.cart__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+
+  width: 12px;
+  height: 12px;
+  margin-top: 9px;
+
+  background: url("../img/icon-cart-footer.svg") no-repeat 0 0;
+}
+
+/*footer footer__middle*/
+.footer__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 63px;
+}
+
 .footer__address,
 .footer__phone {
   font-size: 15px;
@@ -1142,6 +1214,15 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-style: normal;
   color: rgba(255, 255, 255, 1);
+}
+
+.footer__menu_list {
+  display: flex;
+  /*margin-right: -35px;*/
+}
+
+.footer__menu_item {
+  margin-right: 34px;
 }
 
 .footer__menu_link {
@@ -1163,6 +1244,27 @@ input[type="radio"].visually-hidden {
 }
 
 /*footer footer__bottom*/
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__dash {
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
+.social-list {
+  display: flex;
+  margin-right: 31px;
+}
+
+.social-list__item {
+  margin-right: 22px;
+}
+
 .social-list__link {
   display: block;
   width: 32px;
@@ -1195,3 +1297,17 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-soc-twitter.svg");
 }
 
+.footer-developed-by__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+}
+
+.footer-developed-by__link:hover {
+  opacity: 0.6;
+}
+
+.footer-developed-by__link:active {
+  opacity: 0.3;
+}
