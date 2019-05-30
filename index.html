@@ -98,13 +98,10 @@
   <section class="promo-slider">
     <h2 class="visually-hidden">Слайдер товаров</h2>
     <div class="container">
-      <label class="visually-hidden" for="slide1">Слайд 01</label>
-      <input checked class="promo-slider__dot-btn promo-slider__dot-btn_active" id="slide1" name="slide-btn"
+      <input checked class="promo-slider__dot-btn visually-hidden promo-slider__dot-btn_active" id="slide1" name="slide-btn"
              type="radio">
-      <label class="visually-hidden" for="slide2">Слайд 02</label>
-      <input class="promo-slider__dot-btn" id="slide2" name="slide-btn" type="radio">
-      <label class="visually-hidden" for="slide3">Слайд 03</label>
-      <input class="promo-slider__dot-btn" id="slide3" name="slide-btn" type="radio">
+      <input class="promo-slider__dot-btn visually-hidden" id="slide2" name="slide-btn" type="radio">
+      <input class="promo-slider__dot-btn visually-hidden" id="slide3" name="slide-btn" type="radio">
       <ul class="list promo-slider__carousel">
         <li class="promo-slider__item visible">
           <div class="promo-slider__wrap_img">
@@ -138,7 +135,7 @@
           </div>
           <div class="promo-slider__wrap_description">
             <span class="promo-slider__count">02</span>
-            <h3 class="promo-slider__title">Худеем правильно!</h3>
+            <h3 class="promo-slider__title">Худеем<br> правильно!</h3>
             <p class="promo-slider__feature">
               Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.
@@ -179,6 +176,11 @@
           </div>
         </li>
       </ul>
+      <div class="promo-slider__control">
+        <label class="promo-slider__label" for="slide1" aria-label="Слайдер 01">Слайд 01</label>
+        <label class="promo-slider__label" for="slide2" aria-label="Слайдер 02">Слайд 02</label>
+        <label class="promo-slider__label" for="slide3" aria-label="Слайдер 03">Слайд 03</label>
+      </div>
     </div>
   </section>
   <section class="popular">

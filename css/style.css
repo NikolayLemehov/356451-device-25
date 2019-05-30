@@ -94,10 +94,12 @@ input[type="radio"].visually-hidden {
 
 .btn {
   position: relative;
+
   display: inline-block;
   min-height: 40px;
-  min-width: 260px;
+  min-width: 160px;
   padding: 8px 20px;
+
   vertical-align: top;
   text-align: center;
   font-family: "Gilroy", Arial, sans-serif;
@@ -511,12 +513,9 @@ input[type="radio"].visually-hidden {
 
 /*main*/
 /*main promo-slider*/
-.promo-slider {
-  height: 594px;
-}
-
 .promo-slider .container {
   position: relative;
+  min-height: 594px;
 }
 
 .promo-slider .container::before {
@@ -526,10 +525,6 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   height: 113px;
   background-color: rgba(247, 226, 150, 1);
-}
-
-.promo-slider__carousel {
-  margin-top: -24px;
 }
 
 .promo-slider__wrap_img,
@@ -548,8 +543,10 @@ input[type="radio"].visually-hidden {
 
 .promo-slider__wrap_description {
   position: relative;
+
+  min-height: 494px;
   padding-left: 20px;
-  padding-right: 60px;
+  padding-right: 57px;
   padding-top: 34px;
 }
 
@@ -564,8 +561,10 @@ input[type="radio"].visually-hidden {
 
 .promo-slider__count {
   position: absolute;
+  z-index: -1;
   right: 48px;
   top: -12px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 179px;
   font-weight: 800;
@@ -585,23 +584,26 @@ input[type="radio"].visually-hidden {
 
 .promo-slider__feature {
   width: 495px;
+  margin-bottom: 43px;
+
   line-height: 30px;
   letter-spacing: 0.15px;
   color: rgba(70, 70, 70, 1);
 }
 
 .promo-slider__link {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2.15px;
-  color: rgba(0, 0, 0, 1);
+  min-width: 220px;
+  margin-bottom: 49px;
+
+  letter-spacing: 3.5px;
 }
 
 .promo-slider__link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.specification-table {
+  border-collapse: collapse;
 }
 
 .specification-table__td {
@@ -610,14 +612,27 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   line-height: 48px;
   letter-spacing: 0.36px;
+  text-indent: -2.2px;
 }
 
 .specification-table__th {
+  padding-right: 10px;
+  padding-top: 6px;
+
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.13px;
+  text-indent: -1px;
   color: rgba(70, 70, 70, 1);
+}
+
+.specification-table__th:nth-child(2n + 1) {
+  min-width: 160px;
+}
+
+.specification-table__th:nth-child(2n) {
+  min-width: 140px;
 }
 
 .promo-slider__item {
@@ -633,6 +648,44 @@ input[type="radio"].visually-hidden {
 .promo-slider__dot-btn:nth-of-type(2):checked ~ .promo-slider__carousel .promo-slider__item:nth-child(2),
 .promo-slider__dot-btn:nth-of-type(3):checked ~ .promo-slider__carousel .promo-slider__item:nth-child(3) {
   display: flex;
+}
+
+.promo-slider__control {
+  position: relative;
+
+  display: flex;
+  margin-left: 999px;
+  margin-top: -165px;
+}
+
+.promo-slider__label {
+  width: 12px;
+  height: 12px;
+  margin-right: 21px;
+
+  font-size: 0;
+}
+
+.promo-slider__label::before {
+  content: '';
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  background: url("../img/slider-button-empty.svg"), no-repeat, 0 0;
+}
+
+.promo-slider__dot-btn:nth-of-type(1):checked ~ .promo-slider__control .promo-slider__label[for="slide1"]::before {
+  background: url("../img/slider-button.svg"), no-repeat, 0 0;
+}
+
+.promo-slider__dot-btn:nth-of-type(2):checked ~ .promo-slider__control .promo-slider__label[for="slide2"]::before {
+  background: url("../img/slider-button.svg"), no-repeat, 0 0;
+}
+
+.promo-slider__dot-btn:nth-of-type(3):checked ~ .promo-slider__control .promo-slider__label[for="slide3"]::before {
+  background: url("../img/slider-button.svg"), no-repeat, 0 0;
 }
 
 /*main popular*/
@@ -787,16 +840,15 @@ input[type="radio"].visually-hidden {
 .service__list {
   position: relative;
   z-index: -1;
+
   width: 100%;
-  /* min-height: 340px; */
   margin-top: -222px;
-  /* margin-bottom: 130px; */
   padding-left: 402px;
 }
 
 .service__item {
   display: none;
-  padding-right: 319px;
+  padding-right: 321px;
 }
 
 .service__item::before {
