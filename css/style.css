@@ -1413,6 +1413,10 @@ input[type="radio"].visually-hidden {
   border: 3px solid #f0c52e;
 }
 
+.write-us__field:not(:valid) {
+  /*background-color: rgba(237, 181, 181, 0.5);*/
+}
+
 .write-us__field_area {
   width: 760px;
   height: 156px;
