@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header" id="header">
@@ -107,230 +107,235 @@
         <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
       </li>
     </ul>
-    <section class="filter-section">
-      <h2 class="filter__h2">Фильтр:</h2>
-      <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter__field-set filter__field-set_range">
-          <legend class="filter__legend">Стоимость</legend>
-          <div class="filter-range">
-            <div class="filter-range__container_slider">
-              <div class="range-slider">
-                <div class="range-slider__td range-slider__td_left">
-                  <div class="range-slider__img-wrap">
-                    <svg class="range-slider__thumb range-slider__thumb_left" viewBox="0 0 20 23" width="20" height="23" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"></path>
-                      <circle fill="#FFF" cx="10" cy="10" r="10"></circle>
-                      <circle fill="#ABABAB" cx="10" cy="10" r="2"></circle>
-                    </svg>
-                    <!--<img class="range-slider__thumb range-slider__thumb_left" src="img/filter-button.svg"-->
-                         <!--alt="левая кнопка" width="20" height="23">-->
-                  </div>
+  </div>
+  <section class="sort">
+    <div class="container">
+      <h2 class="sort__h2">Сортировка:</h2>
+      <div class="sort__group-parameter">
+        <button class="sort__btn sort__btn_type sort__btn_type_current">
+          <span class="content">По цене</span>
+        </button>
+        <button class="sort__btn sort__btn_type">
+          <span class="content">По типу</span>
+        </button>
+        <button class="sort__btn sort__btn_type">
+          <span class="content">По популярности</span>
+        </button>
+      </div>
+      <div class="sort__group-direction">
+        <button class="sort__btn sort__btn_direction sort__btn_direction_up">
+          <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
+            <path class="sort__btn_color" d="M5.5 0L0 10h11z"></path>
+          </svg>
+          от я до а
+        </button>
+        <button class="sort__btn sort__btn_direction sort__btn_direction_down sort__btn_direction_current">
+          <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
+            <path class="sort__btn_color" d="M5.5 10L0 0h11"></path>
+          </svg>
+          от а до я
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="filter-section">
+    <h2 class="filter__h2">Фильтр:</h2>
+    <form action="https://echo.htmlacademy.ru" class="filter__form" method="get">
+      <fieldset class="filter__field-set filter__field-set_range">
+        <legend class="filter__legend">Стоимость</legend>
+        <div class="filter-range">
+          <div class="filter-range__container_slider">
+            <div class="range-slider">
+              <div class="range-slider__td range-slider__td_left">
+                <div class="range-slider__img-wrap">
+                  <svg class="range-slider__thumb range-slider__thumb_left" height="23" viewBox="0 0 20 23" width="20"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" fill="#ABABAB"
+                          opacity="0.3"></path>
+                    <circle cx="10" cy="10" fill="#FFF" r="10"></circle>
+                    <circle cx="10" cy="10" fill="#ABABAB" r="2"></circle>
+                  </svg>
+                  <!--<img class="range-slider__thumb range-slider__thumb_left" src="img/filter-button.svg"-->
+                  <!--alt="левая кнопка" width="20" height="23">-->
                 </div>
-                <div class="range-slider__td range-slider__td_center"></div>
-                <div class="range-slider__td range-slider__td_right">
-                  <div class="range-slider__img-wrap">
-                    <svg class="range-slider__thumb range-slider__thumb_left" viewBox="0 0 20 23" width="20" height="23" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"></path>
-                      <circle fill="#FFF" cx="10" cy="10" r="10"></circle>
-                      <circle fill="#ABABAB" cx="10" cy="10" r="2"></circle>
-                    </svg>
-                    <!--<img class="range-slider__thumb range-slider__thumb_right" src="img/filter-button.svg"-->
-                         <!--alt="правая кнопка" width="20" height="23">-->
-                  </div>
+              </div>
+              <div class="range-slider__td range-slider__td_center"></div>
+              <div class="range-slider__td range-slider__td_right">
+                <div class="range-slider__img-wrap">
+                  <svg class="range-slider__thumb range-slider__thumb_left" height="23" viewBox="0 0 20 23" width="20"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" fill="#ABABAB"
+                          opacity="0.3"></path>
+                    <circle cx="10" cy="10" fill="#FFF" r="10"></circle>
+                    <circle cx="10" cy="10" fill="#ABABAB" r="2"></circle>
+                  </svg>
+                  <!--<img class="range-slider__thumb range-slider__thumb_right" src="img/filter-button.svg"-->
+                  <!--alt="правая кнопка" width="20" height="23">-->
                 </div>
               </div>
             </div>
-            <div class="filter-range__container_value">
-              <label class="filter-range__label">от
-                <input class="filter-range__value filter-range__value_min" type="text"
-                       name="value_min" value="0" data-min_value="0">
-              </label>
-            </div>
-            <div class="filter-range__container_value">
-              <label class="filter-range__label">до
-                <input class="filter-range__value filter-range__value_max" type="text"
-                       name="value_max" value="30000" data-max_value="35000">
-              </label>
-            </div>
           </div>
-        </fieldset>
-        <fieldset class="filter__field-set">
-          <legend class="filter__legend">Цвет</legend>
-          <ul class="list filter__list">
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                       name="black" id="filter-black" checked disabled>
-                <span class="checkbox-indicator"></span>
-                <span class="content">Черный</span>
-              </label>
-            </li>
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white"
-                       id="filter-white" disabled>
-                <span class="checkbox-indicator"></span>
-                <span class="content">Белый</span>
-              </label>
-            </li>
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue"
-                       id="filter-blue" checked>
-                <span class="checkbox-indicator"></span>
-                <span class="content">Синий</span>
-              </label>
-            </li>
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red"
-                       id="filter-red" checked>
-                <span class="checkbox-indicator"></span>
-                <span class="content">Красный</span>
-              </label>
-            </li>
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink"
-                       id="filter-pink">
-                <span class="checkbox-indicator"></span>
-                <span class="content">Розовый</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter__field-set">
-          <legend class="filter__legend">Bluetooth</legend>
-          <ul class="list filter__list">
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth"
-                       value="true" id="filter-bluethooth-true" checked>
-                <span class="radio-indicator"></span>
-                <span class="content">Есть</span>
-              </label>
-            </li>
-            <li class="filter__option">
-              <label class="filter__label">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth"
-                       value="false" id="filter-bluethooth-false">
-                <span class="radio-indicator"></span>
-                <span class="content">Нет</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="filter__btn-show" type="submit">показать</button>
-      </form>
-    </section>
-    <div class="right-column">
-      <section class="filter-items">
-        <div class="top-filter">
-          <h2 class="top-filter__h2">Сортировка:</h2>
-          <div class="top-filter__group-parameter">
-            <button class="top-filter__btn top-filter__btn_type top-filter__btn_type_current">
-              <span class="content">По цене</span>
-            </button>
-            <button class="top-filter__btn top-filter__btn_type">
-              <span class="content">По типу</span>
-            </button>
-            <button class="top-filter__btn top-filter__btn_type">
-              <span class="content">По популярности</span>
-            </button>
+          <div class="filter-range__container_value">
+            <label class="filter-range__label">от
+              <input class="filter-range__value filter-range__value_min" data-min_value="0"
+                     name="value_min" type="text" value="0">
+            </label>
           </div>
-          <button
-            class="top-filter__btn top-filter__btn_direction top-filter__btn_direction_up top-filter__btn_direction_current">
-            <svg viewBox="0 0 11 10" width="11" height="10" xmlns="http://www.w3.org/2000/svg">
-              <path class="top-filter__btn_color" d="M5.5 0L0 10h11z"></path>
-            </svg>
-            от я до а
-          </button>
-          <button class="top-filter__btn top-filter__btn_direction top-filter__btn_direction_down">
-            <svg viewBox="0 0 11 10" width="11" height="10" xmlns="http://www.w3.org/2000/svg">
-              <path class="top-filter__btn_color" d="M5.5 10L0 0h11"></path>
-            </svg>
-            от а до я
-          </button>
+          <div class="filter-range__container_value">
+            <label class="filter-range__label">до
+              <input class="filter-range__value filter-range__value_max" data-max_value="35000"
+                     name="value_max" type="text" value="30000">
+            </label>
+          </div>
         </div>
-      </section>
-      <section class="catalog-section">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="list catalog-list">
-          <li class="catalog-item goods-card item-new">
-            <img class="goods-card__img" src="img/item-1.jpg"
-                 alt="Любительская селфи-палка" width="360" height="380">
-            <ul class="list goods-card__control">
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
-              </li>
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
-              </li>
-            </ul>
-            <h3 class="goods-card__title">Любительская селфи-палка</h3>
-            <p class="goods-card__price">500 руб.</p>
+      </fieldset>
+      <fieldset class="filter__field-set">
+        <legend class="filter__legend">Цвет</legend>
+        <ul class="list filter__list">
+          <li class="filter__option">
+            <label class="filter__label">
+              <input checked class="visually-hidden filter-input filter-input-checkbox"
+                     disabled id="filter-black" name="black" type="checkbox">
+              <span class="checkbox-indicator"></span>
+              <span class="content">Черный</span>
+            </label>
           </li>
-          <li class="catalog-item goods-card item-new">
-            <img class="goods-card__img" src="img/item-2.jpg"
-                 alt="Перфоратор BOSCH BFG 6000" width="360" height="380">
-            <ul class="list goods-card__control">
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
-              </li>
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
-              </li>
-            </ul>
-            <h3 class="goods-card__title">Любительская селфи-палка</h3>
-            <p class="goods-card__price">500 руб.</p>
+          <li class="filter__option">
+            <label class="filter__label">
+              <input class="visually-hidden filter-input filter-input-checkbox" disabled id="filter-white"
+                     name="white" type="checkbox">
+              <span class="checkbox-indicator"></span>
+              <span class="content">Белый</span>
+            </label>
           </li>
-          <li class="catalog-item goods-card item-new">
-            <img class="goods-card__img" src="img/item-3.jpg"
-                 alt="Перфоратор BOSCH BFG 6000" width="360" height="380">
-            <ul class="list goods-card__control">
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
-              </li>
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
-              </li>
-            </ul>
-            <h3 class="goods-card__title">Любительская селфи-палка</h3>
-            <p class="goods-card__price">500 руб.</p>
+          <li class="filter__option">
+            <label class="filter__label">
+              <input checked class="visually-hidden filter-input filter-input-checkbox" id="filter-blue"
+                     name="blue" type="checkbox">
+              <span class="checkbox-indicator"></span>
+              <span class="content">Синий</span>
+            </label>
           </li>
-          <li class="catalog-item goods-card item-new">
-            <img class="goods-card__img" src="img/item-4.jpg"
-                 alt="Перфоратор BOSCH BFG 6000" width="360" height="380">
-            <ul class="list goods-card__control">
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
-              </li>
-              <li class="goods-card__control-item">
-                <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
-              </li>
-            </ul>
-            <h3 class="goods-card__title">Любительская селфи-палка</h3>
-            <p class="goods-card__price">500 руб.</p>
+          <li class="filter__option">
+            <label class="filter__label">
+              <input checked class="visually-hidden filter-input filter-input-checkbox" id="filter-red"
+                     name="red" type="checkbox">
+              <span class="checkbox-indicator"></span>
+              <span class="content">Красный</span>
+            </label>
+          </li>
+          <li class="filter__option">
+            <label class="filter__label">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pink" name="pink"
+                     type="checkbox">
+              <span class="checkbox-indicator"></span>
+              <span class="content">Розовый</span>
+            </label>
           </li>
         </ul>
-        <div class="pagination">
-          <ul class="list pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link pagination-link-current" href="#">1</a>
+      </fieldset>
+      <fieldset class="filter__field-set">
+        <legend class="filter__legend">Bluetooth</legend>
+        <ul class="list filter__list">
+          <li class="filter__option">
+            <label class="filter__label">
+              <input checked class="visually-hidden filter-input filter-input-radio" id="filter-bluethooth-true"
+                     name="bluetooth" type="radio" value="true">
+              <span class="radio-indicator"></span>
+              <span class="content">Есть</span>
+            </label>
+          </li>
+          <li class="filter__option">
+            <label class="filter__label">
+              <input class="visually-hidden filter-input filter-input-radio" id="filter-bluethooth-false" name="bluetooth"
+                     type="radio" value="false">
+              <span class="radio-indicator"></span>
+              <span class="content">Нет</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter__btn-show" type="submit">показать</button>
+    </form>
+  </section>
+  <div class="right-column">
+    <section class="catalog-section">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="list catalog-list">
+        <li class="catalog-item goods-card item-new">
+          <img alt="Любительская селфи-палка" class="goods-card__img"
+               height="380" src="img/item-1.jpg" width="360">
+          <ul class="list goods-card__control">
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
             </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link_next" href="#">следующая</a>
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
             </li>
           </ul>
-        </div>
-      </section>
-    </div>
+          <h3 class="goods-card__title">Любительская селфи-палка</h3>
+          <p class="goods-card__price">500 руб.</p>
+        </li>
+        <li class="catalog-item goods-card item-new">
+          <img alt="Перфоратор BOSCH BFG 6000" class="goods-card__img"
+               height="380" src="img/item-2.jpg" width="360">
+          <ul class="list goods-card__control">
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
+            </li>
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
+            </li>
+          </ul>
+          <h3 class="goods-card__title">Любительская селфи-палка</h3>
+          <p class="goods-card__price">500 руб.</p>
+        </li>
+        <li class="catalog-item goods-card item-new">
+          <img alt="Перфоратор BOSCH BFG 6000" class="goods-card__img"
+               height="380" src="img/item-3.jpg" width="360">
+          <ul class="list goods-card__control">
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
+            </li>
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
+            </li>
+          </ul>
+          <h3 class="goods-card__title">Любительская селфи-палка</h3>
+          <p class="goods-card__price">500 руб.</p>
+        </li>
+        <li class="catalog-item goods-card item-new">
+          <img alt="Перфоратор BOSCH BFG 6000" class="goods-card__img"
+               height="380" src="img/item-4.jpg" width="360">
+          <ul class="list goods-card__control">
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_buy" href="#">В корзину</a>
+            </li>
+            <li class="goods-card__control-item">
+              <a class="btn goods-card__link goods-card__link_compare" href="#">Добавить к сравнению</a>
+            </li>
+          </ul>
+          <h3 class="goods-card__title">Любительская селфи-палка</h3>
+          <p class="goods-card__price">500 руб.</p>
+        </li>
+      </ul>
+      <div class="pagination">
+        <ul class="list pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination-link-current" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link_next" href="#">следующая</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </main>
 <footer class="footer">

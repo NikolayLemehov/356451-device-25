@@ -1490,6 +1490,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs {
   display: flex;
   margin-right: -37px;
+  margin-bottom: 46px;
 }
 
 .breadcrumbs__item {
@@ -1523,3 +1524,70 @@ input[type="radio"].visually-hidden {
   height: 7px;
   background: url("../img/nav-arrow.svg"), no-repeat, 0 0;
 }
+
+/*catalog-main sort*/
+.sort {
+  min-height: 70px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sort .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 9px 401px;
+}
+
+.sort__h2 {
+  margin-right: 46px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort__btn {
+  background: none;
+  border: none;
+}
+
+.sort__btn_type {
+  margin-right: 17px;
+}
+
+.sort__group-parameter {
+  display: flex;
+}
+
+.sort__btn_type {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort__btn_type_current {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort__group-direction {
+  display: flex;
+  justify-content: space-between;
+  width: 53px;
+  margin-left: auto;
+  margin-right: -6px;
+  font-size: 0;
+}
+
+.sort__btn_direction .sort__btn_color {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.sort__btn_direction_current .sort__btn_color {
+  fill: rgba(0, 0, 0, 1);
+}
+
