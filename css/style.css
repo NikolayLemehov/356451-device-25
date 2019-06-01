@@ -1367,8 +1367,8 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us__p_name {
-   margin-right: 40px;
-   margin-bottom: 18px;
+  margin-right: 40px;
+  margin-bottom: 18px;
 }
 
 .write-us__p_area {
@@ -1671,7 +1671,7 @@ input[type="radio"].visually-hidden {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 69px 0 40px -40px;
+  margin: 69px 0 -11px -40px;
 }
 
 .catalog-item {
@@ -1682,6 +1682,7 @@ input[type="radio"].visually-hidden {
 .goods-card__container {
   position: relative;
 
+  display: block;
   margin-bottom: 14px;
 }
 
@@ -1719,6 +1720,10 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-card__container:hover .goods-card__control {
+  display: flex;
+}
+
+.goods-card__container:active .goods-card__control {
   display: flex;
 }
 
@@ -1772,4 +1777,77 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   letter-spacing: 0.16px;
   color: rgba(70, 70, 70, 1);
+}
+
+/*main-catalog catalog-section pagination*/
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  margin-bottom: 77px;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination__btn {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  color: rgba(0, 0, 0, 1);
+
+  background: none;
+  border: none;
+}
+
+.pagination__btn_arrow {
+  width: 137px;
+  padding: 1px 0 0 0;
+
+  letter-spacing: 3.5px;
+}
+
+.pagination__btn_backward {
+  padding-right: 5px;
+}
+
+.pagination__btn_forward {
+  padding-left: 5px;
+}
+
+.pagination__btn_num {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__btn_num:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-link-current,
+.pagination__btn_num:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__btn_arrow:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination__btn_arrow:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  width: 99px;
+  padding-top: 3px;
+  padding-left: 1px;
+}
+
+.pagination__item {
+  display: flex;
 }
