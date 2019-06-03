@@ -563,12 +563,12 @@ input[type="radio"].visually-hidden {
 .main-menu__list2 {
   position: absolute;
   z-index: 10;
+
   display: none;
   width: 1160px;
-  padding-top: 21px;
   margin-left: -60px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 21px 60px 21px;
+
   background-color: rgba(247, 226, 150, 1);
 }
 
@@ -829,9 +829,12 @@ input[type="radio"].visually-hidden {
 
 /*main*/
 /*main promo-slider*/
+.promo-slider {
+  margin-bottom: 100px;
+}
+
 .promo-slider .container {
   position: relative;
-  min-height: 594px;
 }
 
 .promo-slider .container::before {
@@ -841,6 +844,10 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   height: 113px;
   background-color: rgba(247, 226, 150, 1);
+}
+
+.promo-slider__carousel {
+  width: 100%;
 }
 
 .promo-slider__wrap_img,
@@ -870,8 +877,10 @@ input[type="radio"].visually-hidden {
   content: '';
   position: absolute;
   top: 39px;
+
   width: 100px;
   height: 7px;
+
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -969,11 +978,11 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider__control {
-  position: relative;
+  position: absolute;
+  right: 62px;
+  bottom: 153px;
 
   display: flex;
-  margin-left: 999px;
-  margin-top: -165px;
 }
 
 .promo-slider__label {
@@ -1650,6 +1659,7 @@ input[type="radio"].visually-hidden {
 
 .sort__group-parameter {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sort__btn_type {
