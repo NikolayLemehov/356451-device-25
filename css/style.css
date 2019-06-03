@@ -1107,17 +1107,21 @@ input[type="radio"].visually-hidden {
 .service .container {
   position: relative;
 
-  padding-top: 80px;
+  display: flex;
 }
 
-.service .container::before {
+.service__wrap {
+  position: relative;
+}
+
+.service__wrap::before {
   content: '';
   position: absolute;
-  left: 277px;
-  top: 0;
+  right: 0;
+  top: -80px;
+  bottom: -71px;
 
   width: 7px;
-  height: 319px;
 
   background-color: rgba(0, 0, 0, 1);
 }
@@ -1127,9 +1131,20 @@ input[type="radio"].visually-hidden {
   position: absolute;
   z-index: -2;
   top: 100px;
+
   bottom: 0;
   width: 100%;
+
   background-color: rgba(229, 229, 229, 1);
+}
+
+.service__control {
+  position: relative;
+
+  width: 284px;
+  margin-bottom: 69px;
+  padding-top: 80px;
+  padding-bottom: 47px;
 }
 
 .service__label {
@@ -1143,14 +1158,18 @@ input[type="radio"].visually-hidden {
   letter-spacing: 3.6px;
 }
 
-.service__btn:checked + .service__label,
+.service__btn:nth-of-type(1):checked ~ .service__control .service__label:nth-child(1),
+.service__btn:nth-of-type(2):checked ~ .service__control .service__label:nth-child(2),
+.service__btn:nth-of-type(3):checked ~ .service__control .service__label:nth-child(3),
 .service__label:active {
   color: rgba(247, 225, 132, 1);
 
   background-color: rgba(0, 0, 0, 1);
 }
 
-.service__btn:checked + .service__label::after {
+.service__btn:nth-of-type(1):checked ~ .service__control .service__label:nth-child(1)::after,
+.service__btn:nth-of-type(2):checked ~ .service__control .service__label:nth-child(2)::after,
+.service__btn:nth-of-type(3):checked ~ .service__control .service__label:nth-child(3)::after {
   content: '';
   position: absolute;
   right: 0;
@@ -1168,14 +1187,14 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: -1;
 
-  width: 100%;
-  margin-top: -222px;
-  padding-left: 402px;
+  width: 759px;
+  margin-left: auto;
+  padding: 26px 0 50px 0;
 }
 
 .service__item {
   display: none;
-  padding-right: 321px;
+  padding-right: 322px;
 }
 
 .service__item::before {
@@ -1185,9 +1204,11 @@ input[type="radio"].visually-hidden {
 
 .service__item:nth-child(1)::before {
   right: 66px;
-  top: 11px;
+  top: 12px;
+
   width: 136px;
   height: 164px;
+
   background: url("../img/delivery.svg"), no-repeat, 0 0;
 }
 
@@ -1201,25 +1222,30 @@ input[type="radio"].visually-hidden {
 
 .service__item:nth-child(3)::before {
   right: 70px;
-  top: -13px;
+  top: -12px;
+
   width: 156px;
   height: 188px;
+
   background: url("../img/credit.svg"), no-repeat, 0 0;
 }
 
 .service__btn:nth-of-type(1):checked ~ .service__list .service__item:nth-child(1),
 .service__btn:nth-of-type(2):checked ~ .service__list .service__item:nth-child(2),
 .service__btn:nth-of-type(3):checked ~ .service__list .service__item:nth-child(3) {
+  position: relative;
+
   display: block;
 }
 
 .service__title {
   margin-bottom: 31px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.61px;
   color: rgba(0, 0, 0, 1);
 }
 
