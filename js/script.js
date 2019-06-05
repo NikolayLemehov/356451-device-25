@@ -7,10 +7,10 @@ function writeUs() {
   var nameField = popup.querySelector("[name=name]");
   var emailField = popup.querySelector("[name=email]");
   var textField = popup.querySelector("[name=text]");
+  var input = popup.querySelectorAll('form [required]');
   var isStorageSupport = true;
   var nameStorage = "";
   var emailStorage = "";
-  var input = document.querySelectorAll('form [required]');
 
   try {
     nameStorage = localStorage.getItem("nameField");
