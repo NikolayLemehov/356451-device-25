@@ -56,7 +56,7 @@ function writeUs() {
       popup.classList.remove("modal-error");
       void popup.offsetWidth;
       popup.classList.add("modal-error");
-      for (let i = 0; i < input.length; i++) {
+      for (var i = 0; i < input.length; i++) {
         if (!input[i].value) input[i].classList.add('empty-field')
       }
     } else {
@@ -64,8 +64,8 @@ function writeUs() {
         localStorage.setItem("nameField", nameField.value);
         localStorage.setItem("emailField", emailField.value);
       }
-      for (let i = 0; i < input.length; i++) {
-        input[i].classList.remove('empty-field');
+      for (var y = 0; y < input.length; y++) {
+        input[y].classList.remove('empty-field');
       }
     }
   });
