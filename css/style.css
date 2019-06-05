@@ -1550,22 +1550,6 @@ input[type="radio"].visually-hidden {
   color: rgba(70, 70, 70, 0.4);
 }
 
-/*.write-us__field:hover::-webkit-input-placeholder { !* Chrome/Opera/Safari *!*/
-/*color: rgba(0, 0, 0, 0.6);*/
-/*}*/
-
-/*.write-us__field:hover::-moz-placeholder { !* Firefox 19+ *!*/
-/*color: rgba(0, 0, 0, 0.6);*/
-/*}*/
-
-/*.write-us__field:hover:-ms-input-placeholder { !* IE 10+ *!*/
-/*color: rgba(0, 0, 0, 0.6);*/
-/*}*/
-
-/*.write-us__field:hover:-moz-placeholder { !* Firefox 18- *!*/
-/*color: rgba(0, 0, 0, 0.6);*/
-/*}*/
-
 .write-us_btn {
   min-width: 200px;
   border: none;
@@ -1635,6 +1619,11 @@ input[type="radio"].visually-hidden {
   height: 7px;
 
   background: url("../img/nav-arrow.svg") no-repeat 0 0;
+}
+
+/*main-catalog double-section*/
+.main-catalog .double-section {
+  overflow-x: hidden;
 }
 
 /*main-catalog filter*/
