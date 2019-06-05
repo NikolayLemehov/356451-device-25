@@ -11,6 +11,7 @@ function writeUs() {
   var isStorageSupport = true;
   var nameStorage = "";
   var emailStorage = "";
+  var input = document.querySelectorAll('form [required]');
 
   try {
     nameStorage = localStorage.getItem("nameField");
@@ -56,26 +57,37 @@ function writeUs() {
       popup.classList.remove("modal-error");
       void popup.offsetWidth;
       popup.classList.add("modal-error");
+      for (let i = 0; i < input.length; i++) {
+        if (!input[i].value) input[i].classList.add('empty-field')
+      }
     } else {
       if (isStorageSupport) {
         localStorage.setItem("nameField", nameField.value);
         localStorage.setItem("emailField", emailField.value);
+      }
+      for (let i = 0; i < input.length; i++) {
+        input[i].classList.remove('empty-field');
       }
     }
   });
   sendForm.addEventListener("click", function (evt) {
-    evt.preventDefault();
     if (!nameField.value || !emailField.value || !textField.value) {
-
+      evt.preventDefault();
       popup.classList.remove("modal-error");
       void popup.offsetWidth;
       popup.classList.add("modal-error");
+      for (let i = 0; i < input.length; i++) {
+        if (!input[i].value) input[i].classList.add('empty-field')
+      }
     } else {
       if (isStorageSupport) {
         localStorage.setItem("nameField", nameField.value);
         localStorage.setItem("emailField", emailField.value);
       }
-      form.submit();
+      for (let i = 0; i < input.length; i++) {
+        input[i].classList.remove('empty-field');
+      }
+      // form.submit();
     }
   });
 }
