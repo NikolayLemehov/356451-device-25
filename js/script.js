@@ -4,7 +4,6 @@ function writeUs() {
   var openPopupButton = document.querySelector(".contacts__btn");
   var popup = document.querySelector(".modal.write-us");
   var closePopupButton = popup.querySelector(".btn-modal-close");
-  var form = popup.querySelector("form");
   var nameField = popup.querySelector("[name=name]");
   var emailField = popup.querySelector("[name=email]");
   var textField = popup.querySelector("[name=text]");
@@ -51,25 +50,6 @@ function writeUs() {
       }
     }
   });
-  form.addEventListener("submit", function (evt) {
-    if (!nameField.value || !emailField.value || !textField.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      void popup.offsetWidth;
-      popup.classList.add("modal-error");
-      for (let i = 0; i < input.length; i++) {
-        if (!input[i].value) input[i].classList.add('empty-field')
-      }
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("nameField", nameField.value);
-        localStorage.setItem("emailField", emailField.value);
-      }
-      for (let i = 0; i < input.length; i++) {
-        input[i].classList.remove('empty-field');
-      }
-    }
-  });
   sendForm.addEventListener("click", function (evt) {
     if (!nameField.value || !emailField.value || !textField.value) {
       evt.preventDefault();
@@ -87,7 +67,6 @@ function writeUs() {
       for (let i = 0; i < input.length; i++) {
         input[i].classList.remove('empty-field');
       }
-      // form.submit();
     }
   });
 }
