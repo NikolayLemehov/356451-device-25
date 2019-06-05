@@ -2052,12 +2052,13 @@ input[type="radio"].visually-hidden {
   height: 100%;
   padding-top: 46px;
 
-  background-color: rgba(238, 238, 238, 1);
-  opacity: 0.7;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .goods-card__container:hover .goods-card__control {
   display: flex;
+
+  cursor: pointer;
 }
 
 .goods-card__container:active .goods-card__control {
@@ -2065,6 +2066,8 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-card__link_buy {
+  z-index: 1;
+
   min-width: 200px;
   margin-bottom: 6px;
 
