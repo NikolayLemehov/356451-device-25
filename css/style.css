@@ -1035,13 +1035,17 @@ input[type="radio"].visually-hidden {
 }
 
 .popular__item {
-  width: 160px; /*временно*/
+  width: 160px;
   margin-left: 40px;
 }
 
+.popular__link {
+  display: block;
+}
+
 .popular__frame {
-  width: 160px; /*временно*/
   margin-bottom: 33px;
+
   background-color: rgba(240, 197, 46, 0.5);
 }
 
