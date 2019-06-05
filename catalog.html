@@ -108,40 +108,10 @@
       </li>
     </ul>
   </div>
-  <section class="sort">
-    <div class="container">
-      <h2 class="sort__h2">Сортировка:</h2>
-      <div class="sort__group-parameter">
-        <button class="sort__btn sort__btn_type sort__btn_type_current">
-          <span class="content">По цене</span>
-        </button>
-        <button class="sort__btn sort__btn_type">
-          <span class="content">По типу</span>
-        </button>
-        <button class="sort__btn sort__btn_type">
-          <span class="content">По популярности</span>
-        </button>
-      </div>
-      <div class="sort__group-direction">
-        <button class="sort__btn sort__btn_direction sort__btn_direction_up">
-          <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
-            <path class="sort__btn_color" d="M5.5 0L0 10h11z"></path>
-          </svg>
-          от я до а
-        </button>
-        <button class="sort__btn sort__btn_direction sort__btn_direction_down sort__btn_direction_current">
-          <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
-            <path class="sort__btn_color" d="M5.5 10L0 0h11"></path>
-          </svg>
-          от а до я
-        </button>
-      </div>
-    </div>
-  </section>
   <div class="double-section">
     <div class="container container_between">
       <section class="filter">
-        <h2 class="filter__h2 visually-hidden">Фильтр:</h2>
+        <h2 class="filter__h2">Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" class="filter__form" method="get">
           <fieldset class="filter__field-set filter__field-set_range">
             <legend class="filter__legend">Стоимость</legend>
@@ -234,7 +204,37 @@
         </form>
       </section>
       <div class="catalog-section">
-        <h2 class="visually-hidden">Список товаров</h2>
+        <h2 class="visually-hidden">Сортированный список товаров </h2>
+        <div class="sort">
+          <div class="container">
+            <h2 class="sort__h2">Сортировка:</h2>
+            <div class="sort__group-parameter">
+              <button class="sort__btn sort__btn_type sort__btn_type_current">
+                <span class="content">По цене</span>
+              </button>
+              <button class="sort__btn sort__btn_type">
+                <span class="content">По типу</span>
+              </button>
+              <button class="sort__btn sort__btn_type">
+                <span class="content">По популярности</span>
+              </button>
+            </div>
+            <div class="sort__group-direction">
+              <button class="sort__btn sort__btn_direction sort__btn_direction_up">
+                <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sort__btn_color" d="M5.5 0L0 10h11z"></path>
+                </svg>
+                от я до а
+              </button>
+              <button class="sort__btn sort__btn_direction sort__btn_direction_down sort__btn_direction_current">
+                <svg height="10" viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sort__btn_color" d="M5.5 10L0 0h11"></path>
+                </svg>
+                от а до я
+              </button>
+            </div>
+          </div>
+        </div>
         <ul class="list catalog-list">
           <li class="catalog-item goods-card">
             <div class="goods-card__container">
