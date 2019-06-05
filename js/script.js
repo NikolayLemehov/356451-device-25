@@ -41,6 +41,15 @@ function writeUs() {
     popup.classList.remove("modal__show");
     popup.classList.remove("modal-error");
   });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal__show")) {
+        popup.classList.remove("modal__show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
   form.addEventListener("submit", function (evt) {
     if (!nameField.value || !emailField.value || !textField.value) {
       evt.preventDefault();
@@ -54,13 +63,19 @@ function writeUs() {
       }
     }
   });
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal__show")) {
-        popup.classList.remove("modal__show");
-        popup.classList.remove("modal-error");
+  sendForm.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (!nameField.value || !emailField.value || !textField.value) {
+
+      popup.classList.remove("modal-error");
+      void popup.offsetWidth;
+      popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("nameField", nameField.value);
+        localStorage.setItem("emailField", emailField.value);
       }
+      form.submit();
     }
   });
 }
