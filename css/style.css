@@ -967,8 +967,8 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider__dot-btn {
-  position: relative;
-  bottom: 0;
+  right: 122px;
+  bottom: 159px;
 }
 
 .promo-slider__dot-btn:nth-of-type(1):checked ~ .promo-slider__carousel .promo-slider__item:nth-child(1),
