@@ -1902,6 +1902,7 @@ input[type="radio"].visually-hidden {
 
 .range-slider__td_left .range-slider__img-wrap {
   width: 100%;
+
   text-align: right;
 }
 
@@ -1909,7 +1910,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -10px;
 
+  max-width: none;
+
   text-align: right;
+
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
