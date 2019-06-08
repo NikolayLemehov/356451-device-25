@@ -503,16 +503,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 223px;
   padding-top: 10px;
-}
-
-.cart {
-  margin-left: 10px;
-}
-
-.comparison {
-  margin-left: 10px;
 }
 
 .comparison__link,
@@ -520,6 +513,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: block;
+  margin-left: 10px;
 }
 
 .comparison__link {
