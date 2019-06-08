@@ -191,7 +191,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   min-height: 40px;
   min-width: 160px;
-  padding: 8px 20px;
+  padding: 8px 20px 8px 24px;
 
   vertical-align: top;
   text-align: center;
@@ -827,7 +827,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*margin-right: -35px;*/
+  margin-left: -3px;
 }
 
 .footer__menu_item {
@@ -1370,7 +1370,7 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.25px;
   color: rgba(70, 70, 70, 1);
 }
 
@@ -1482,6 +1482,8 @@ input[type="radio"].visually-hidden {
 
 /*main about-us*/
 .about-us__title {
+  margin-left: -1px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -1531,11 +1533,13 @@ input[type="radio"].visually-hidden {
 
 /*main contacts*/
 .contacts__title {
+  margin-left: -2px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.71px;
   color: rgba(0, 0, 0, 1);
 }
 
