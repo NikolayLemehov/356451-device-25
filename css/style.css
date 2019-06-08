@@ -305,8 +305,9 @@ input[type="radio"].visually-hidden {
 
 .header__link_logo {
   position: absolute;
-  top: -17px;
+  top: -18px;
   left: 60px;
+
   display: block;
   height: 35px;
   width: 163px;
@@ -699,7 +700,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  /* align-items: flex-start; */
   margin-bottom: 29px;
 }
 
@@ -709,15 +709,14 @@ input[type="radio"].visually-hidden {
 
 .footer__link_logo .footer__svg_logo {
   display: block;
-  fill: rgba(255, 198, 0, 1);
 }
 
 .footer__link_logo:hover .footer__svg_logo {
-  fill: rgba(255, 198, 0, 0.6);
+  opacity: 0.6;
 }
 
 .footer__link_logo:active .footer__svg_logo {
-  fill: rgba(255, 198, 0, 0.3);
+  opacity: 0.3;
 }
 
 /*footer footer__top user-nav*/
