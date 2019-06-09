@@ -337,6 +337,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 49px;
   margin-right: 90px;
 }
 
@@ -360,11 +361,16 @@ input[type="radio"].visually-hidden {
 .form-search__field:focus,
 .form-search__field:valid {
   border-bottom: 2px solid rgba(0, 0, 0, 1);
+  padding-top: 3px;
 }
 
 .form-search__field:invalid {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.form-search__field::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .form-search__field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -373,17 +379,20 @@ input[type="radio"].visually-hidden {
 
 .form-search__field::-moz-placeholder { /* Firefox 19+ */
   color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
+  opacity: 1;
 }
 
 .form-search__field:-ms-input-placeholder { /* IE 10+ */
   color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
+}
+
+.form-search__field::-ms-input-placeholder { /* Edge */
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .form-search__field:-moz-placeholder { /* Firefox 18- */
   color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
+  opacity: 1;
 }
 
 .form-search__field:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -395,6 +404,10 @@ input[type="radio"].visually-hidden {
 }
 
 .form-search__field:hover:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-search__field:hover::-ms-input-placeholder { /* Edge */
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1696,7 +1709,7 @@ input[type="radio"].visually-hidden {
   width: 960px;
   height: 559px;
 
-  background: url("../img/map-big.jpg") no-repeat 0 0;
+  background: rgba(235, 234, 231, 1) url("../img/map-big.jpg") no-repeat 0 0;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
