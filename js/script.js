@@ -1,5 +1,3 @@
-var currentLocation = window.location;
-
 function writeUs() {
   var openPopupButton = document.querySelector(".contacts__btn");
   var popup = document.querySelector(".modal.write-us");
@@ -95,7 +93,10 @@ function map() {
   });
 }
 
-if (currentLocation.pathname.lastIndexOf("/index.html") >= 0) {
+if (document.querySelector(".contacts__btn") !== null && document.querySelector(".modal.write-us") !== null) {
   writeUs();
+}
+
+if (document.querySelector(".contacts__map") !== null && document.querySelector(".modal-map") !== null) {
   map();
 }
